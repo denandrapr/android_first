@@ -76,6 +76,17 @@ public class Permission extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Intent i = new Intent("android.media.action.IMAGE_CAPTURE");
+
+                if (Build.VERSION.SDK_INT >= 23){
+                    if (ContextCompat.checkSelfPermission(Permission.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                        ActivityCompat.requestPermissions(Permission.this, new String[] {Manifest.permission.CAMERA}, 1000 );
+                    }else{
+                        startActivity(i);
+                    }
+                }else{
+                    startActivity(i);
+                }
 
             }
         });
