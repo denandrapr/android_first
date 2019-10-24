@@ -12,12 +12,14 @@ public class AdapterCuy extends BaseAdapter {
     Context x;
     int gambarnya[];
     String judulnya[];
+    String harga[];
     LayoutInflater tempel;
 
-    public AdapterCuy(Context x, int[] gambarnya, String[] judulnya){
+    public AdapterCuy(Context x, int[] gambarnya, String[] judulnya, String[] harga){
         this.x = x;
         this.gambarnya = gambarnya;
         this.judulnya=judulnya;
+        this.harga = harga;
         tempel = (LayoutInflater.from(x));
     }
 
@@ -41,8 +43,10 @@ public class AdapterCuy extends BaseAdapter {
         view = tempel.inflate(R.layout.activity_adapter_cuy,null);
         ImageView g = (ImageView)view.findViewById(R.id.gambar);
         TextView j = (TextView)view.findViewById(R.id.tvjudul);
+        TextView d = (TextView) view.findViewById(R.id.txtHarga);
         g.setImageResource(gambarnya[i]);
         j.setText(judulnya[i]);
+        d.setText(harga[i]);
         return view;
     }
 }

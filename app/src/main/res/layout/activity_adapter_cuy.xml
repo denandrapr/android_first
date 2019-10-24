@@ -19,6 +19,16 @@
         android:gravity="center"
         android:fontFamily="monospace"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"/>
+
+    <TextView
+        android:id="@+id/txtHarga"
+        android:textSize="14sp"
+        android:textColor="#FF5722"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"/>
 
 </LinearLayout>
