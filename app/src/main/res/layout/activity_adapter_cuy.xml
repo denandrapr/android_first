@@ -10,9 +10,15 @@
         android:scaleType="fitXY"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/ic_launcher_background"/>
+
     <TextView
         android:id="@+id/tvjudul"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
 
 </LinearLayout>
