@@ -17,7 +17,6 @@
         android:textColor="@android:color/black"
         android:layout_width="match_parent"
         android:gravity="center"
-        android:fontFamily="monospace"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"/>
 
@@ -27,7 +26,6 @@
         android:textColor="#FF5722"
         android:layout_width="match_parent"
         android:gravity="center"
-        android:fontFamily="monospace"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"/>
 
